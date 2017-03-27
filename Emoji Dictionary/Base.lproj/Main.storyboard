@@ -77,6 +77,10 @@
                             <constraint firstItem="fgi-ox-Ljl" firstAttribute="top" secondItem="TmO-2u-t6S" secondAttribute="bottom" constant="30" id="xhJ-zI-HJI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="qjK-mk-KZA" id="lZ4-Dn-1pE"/>
+                        <outlet property="emojiLabel" destination="fgi-ox-Ljl" id="scs-1c-qh0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESe-oJ-Qvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

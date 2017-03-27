@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableview: UITableView!
     
-    var emojis = ["😃","😎","😡","😈","💩","🖖", "👄"]
+    var emojis = ["😎","😡","😈","💩"]
     
     
     override func viewDidLoad() {
@@ -35,12 +35,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let emoji = emojis[indexPath.row]
         performSegue(withIdentifier: "moveSegue", sender: emoji)
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(sender)
+        let defVC = segue.destination as! DefinitionViewController
+        defVC.emoji = sender as! String
+        
+        
     }
     
     
