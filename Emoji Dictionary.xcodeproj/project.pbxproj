@@ -14,6 +14,7 @@
 		E38F120D1E899631005FA3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38F120B1E899631005FA3BC /* LaunchScreen.storyboard */; };
 		E38F12181E899631005FA3BC /* Emoji_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38F12171E899631005FA3BC /* Emoji_DictionaryTests.swift */; };
 		E38F12231E899632005FA3BC /* Emoji_DictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38F12221E899632005FA3BC /* Emoji_DictionaryUITests.swift */; };
+		E38F12311E89A632005FA3BC /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38F12301E89A632005FA3BC /* DefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E38F121E1E899632005FA3BC /* Emoji DictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji DictionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38F12221E899632005FA3BC /* Emoji_DictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_DictionaryUITests.swift; sourceTree = "<group>"; };
 		E38F12241E899632005FA3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38F12301E89A632005FA3BC /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				E38F12021E899631005FA3BC /* AppDelegate.swift */,
 				E38F12041E899631005FA3BC /* ViewController.swift */,
+				E38F12301E89A632005FA3BC /* DefinitionViewController.swift */,
 				E38F12061E899631005FA3BC /* Main.storyboard */,
 				E38F12091E899631005FA3BC /* Assets.xcassets */,
 				E38F120B1E899631005FA3BC /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38F12051E899631005FA3BC /* ViewController.swift in Sources */,
+				E38F12311E89A632005FA3BC /* DefinitionViewController.swift in Sources */,
 				E38F12031E899631005FA3BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
