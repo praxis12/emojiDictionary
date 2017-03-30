@@ -68,16 +68,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGO-4f-2Z6">
+                                <rect key="frame" x="122.5" y="414" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthyear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWb-4H-mxy">
+                                <rect key="frame" x="129" y="465" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RWb-4H-mxy" firstAttribute="top" secondItem="RGO-4f-2Z6" secondAttribute="bottom" constant="30" id="5JD-sF-NQh"/>
                             <constraint firstItem="qjK-mk-KZA" firstAttribute="top" secondItem="fgi-ox-Ljl" secondAttribute="bottom" constant="30" id="Bjo-2I-LLR"/>
                             <constraint firstItem="qjK-mk-KZA" firstAttribute="centerX" secondItem="BeH-bG-THh" secondAttribute="centerX" id="Geg-cQ-JrC"/>
+                            <constraint firstItem="RGO-4f-2Z6" firstAttribute="top" secondItem="qjK-mk-KZA" secondAttribute="bottom" constant="30" id="Pg0-pa-SWY"/>
+                            <constraint firstItem="RWb-4H-mxy" firstAttribute="centerX" secondItem="BeH-bG-THh" secondAttribute="centerX" id="hGy-yN-hNm"/>
                             <constraint firstItem="fgi-ox-Ljl" firstAttribute="centerX" secondItem="BeH-bG-THh" secondAttribute="centerX" id="kFU-8H-nVi"/>
+                            <constraint firstItem="RGO-4f-2Z6" firstAttribute="centerX" secondItem="BeH-bG-THh" secondAttribute="centerX" id="rTV-SD-4l3"/>
                             <constraint firstItem="fgi-ox-Ljl" firstAttribute="top" secondItem="TmO-2u-t6S" secondAttribute="bottom" constant="30" id="xhJ-zI-HJI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="RWb-4H-mxy" id="KR9-fo-cvF"/>
+                        <outlet property="categoryLabel" destination="RGO-4f-2Z6" id="y9X-Wa-dig"/>
                         <outlet property="descriptionLabel" destination="qjK-mk-KZA" id="lZ4-Dn-1pE"/>
                         <outlet property="emojiLabel" destination="fgi-ox-Ljl" id="scs-1c-qh0"/>
                     </connections>
@@ -91,7 +109,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d0s-wI-4Oo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FNV-R2-1pv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FNV-R2-1pv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
