@@ -84,7 +84,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         emoji5.stringEmoji = "👨‍❤️‍👨"
         emoji5.birthYear = 2015
         emoji5.category = "Emotion"
-        emoji5.definition = "I <3 Reidkun"
+        emoji5.definition = "Relationship"
         
         return [emoji1, emoji2, emoji3, emoji4, emoji5,]
     }
